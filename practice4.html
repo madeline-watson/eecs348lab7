@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <h1>EECS 348 Lab 7 Practice</h1>
+	</head>
+	<form method="POST">
+        Choose size of multiplication table: <input type="text" name="size">
+        <input type="submit">
+    </form>
+ <table border="1">
+    <?php 
+        if($_POST) {
+            $size = $_POST["size"];
+            for( $r = 1; $r < $size + 1; $r++) {
+	            for( $c=1; $c< $size + 1; $c++) {
+	                echo "<td class='$bg'><a href='#' title='$r x $c = ". $r * $c . " ' >" . $r*$c . "</a></td>" ;
+	            }		
+                echo  "</tr>";
+	        }      
+	    }  
+	?>
+</table>
+
+	</body>
+</html>

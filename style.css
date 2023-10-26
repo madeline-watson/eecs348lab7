@@ -1,0 +1,12 @@
+.profile {
+	display: grid;
+	align-items: center; 
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 0px;
+}
+
+.dummy_paragraph {
+    border-style = solid;
+    border-width = 2px;
+}
+
